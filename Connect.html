@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Connect</title>
+<link rel="stylesheet" href="connect style.css">
+<link rel ="icon" href ="data/website logo S-01.png">
+</head>
+
+<body>
+	
+	
+<header>
+	
+	 
+	
+		
+		<ul>
+			<li>
+				
+		
+		 <input type="button" name="english" id="english" value="English">
+	<input type="button" name="arabic" id="arabic" value="العربية">
+				
+			</li>
+  </ul>
+	
+	
+	
+	</header>
+	
+	
+	
+	
+	
+<nav class="graphic">
+		
+		<a href="index.html" class="home" id="home" >Home</a>
+		<a href="about us.html" class="about us" id = "about">About Us</a>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSfMVJprzQF9LNMs1isC5wKIv6_PILHyi5ATwlHtJq9AOYqV2Q/viewform?usp=sf_link" target="_blank" class="order" id="order">Order</a>
+		<a href="Connect.html" class="connect" id="connect">Connect</a>
+		<ul>
+		<li><a class="ourwork" id="ourwork">our work</a>
+			
+		       <ul>
+			<li><a href="Gallary3.html" class="photos" id="photos">photos</a></li>
+			<li><a href="videos.html" class="videos" id="videos">videos</a></li>
+		      </ul>
+		 
+		
+		</li>
+		
+	  </ul>
+</nav>
+
+	
+	<br>
+<div class="box1">
+	
+	<table width="103" height="101" border="1">
+  <tbody>
+    <tr>
+      <td width="163"><a href="https://wa.me/00970592189064" target="_blank"><img src="data/whatsapp-01.png" width="87" height="87" alt=""/></a></td>
+    </tr>
+  </tbody>
+</table>
+	
+</div>
+<br>
+	
+	<div class="box2">
+	
+	
+	<table width="107" height="100" border="1">
+	  <tbody>
+	    <tr>
+	      <td><a href="mailto:ahmadsab305@gmail.com"><img src="data/email-01-01.png" width="88" height="88" alt=""/></a></td>
+        </tr>
+      </tbody>
+</table>
+	
+</div>
+	
+
+	
+	
+	
+	
+		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-d880046b-14c3-4b99-b66b-34e2c1edf7b4"></div>
+	
+	
+<script>
+	
+			
+			
+	
+let arabic = document.getElementById("arabic");
+let english = document.getElementById("english");
+let home = document.getElementById("home");
+let about = document.getElementById("about");
+	let order = document.getElementById("order");
+let connect = document.getElementById("connect");
+	let ourwork = document.getElementById("ourwork");
+let photos = document.getElementById("photos");
+	let videos = document.getElementById("videos");
+
+arabic.onclick = ()=>{
+	
+	
+	set("arabic");
+	
+	
+}
+
+
+english.onclick = ()=>{
+	
+	
+	set("english");
+	
+	
+}
+function set(set){
+	
+	
+	if(set==="arabic"){
+	   
+		
+	home.innerHTML ="الرئيسية";
+	  about.innerHTML ="من نحن";
+	  order.innerHTML ="اطلب";
+	  connect.innerHTML ="تواصل معنا";
+		 ourwork.innerHTML ="اعمالنا";
+
+	   	  photos.innerHTML ="الصور";
+	 videos.innerHTML ="الفيديوهات";
+	 
+	   }else if(set==="english"){
+				
+				
+	home.innerHTML ="Home";
+	about.innerHTML ="About US";
+	 order.innerHTML ="order";
+	  connect.innerHTML ="connect";
+	 ourwork.innerHTML ="our work";
+	 	  photos.innerHTML ="photos";
+	 videos.innerHTML ="videos";
+	 
+		   
+		   
+				}
+	
+	
+	
+	
+	
+} 
+	
+	
+	
+	
+	</script>	
+</body>
+</html>

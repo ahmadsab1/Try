@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>about us</title>
+<link rel="stylesheet" href="abous us.css">
+<link rel ="icon" href ="data/website logo S-01.png">
+</head>
+
+<body>
+	
+	
+		
+	<div class="graphic">
+	<header><h1>About us</h1>
+		
+		
+		<ul>
+			<li>
+	  <input class="tr" type="button" name="english" id="english" value="english">
+		
+		<input class="tr" type="button" name="arabic" id="arabic" value="العربية">
+			</li>
+			</ul>
+
+		
+		
+		</header>
+		
+		
+	</div>
+	
+		<nav class="graphic">
+		
+		<a href="index.html" class="home" id="home" >Home</a>
+		<a href="about us.html" class="about us" id = "about">About Us</a>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSfMVJprzQF9LNMs1isC5wKIv6_PILHyi5ATwlHtJq9AOYqV2Q/viewform?usp=sf_link" target="_blank" class="order" id="order">Order</a>
+		<a href="Connect.html" class="connect" id="connect">Connect</a>
+		<ul>
+		<li><a class="ourwork" id="ourwork">our work</a>
+			
+		       <ul>
+			<li><a href="Gallary3.html" class="photos" id="photos">photos</a></li>
+			<li><a href="videos.html" class="videos" id="videos">videos</a></li>
+		      </ul>
+		 
+		
+		</li>
+		
+	  </ul>
+</nav>
+	
+	<h2 id="us">
+	
+	We have extensive experience 
+	  in the field of designing and programming websites, graphic design, montage, motion graphics, infographics, 3D modeling
+	  and animation, and when you request any service, you will get something professional and in a short time and competitive price</h2>
+	<h3 id="co">
+		
+		
+		
+		<br>
+	  
+	  
+	  <p align="left">
+	    
+	    
+	    you can found us on
+	    
+	    
+	    </p>
+</h3>
+	<table  >
+	  <tbody>
+	    <tr>
+	      <td width="150" height="87"><a href="https://www.facebook.com/Sabbah-Graphic-109642497599671" target="_blank"><img src="data/facebook icone-01.png" width="163" height="163" alt=""/></a></td>
+        </tr>
+      </tbody>
+</table>
+	<h2>&nbsp; </h2>
+	<h2>&nbsp; </h2>
+	
+	
+	
+
+	
+	
+	
+		
+<script>
+	
+			
+			
+	
+let arabic = document.getElementById("arabic");
+let english = document.getElementById("english");
+let home = document.getElementById("home");
+let about = document.getElementById("about");
+	let order = document.getElementById("order");
+let connect = document.getElementById("connect");
+	let ourwork = document.getElementById("ourwork");
+let photos = document.getElementById("photos");
+	let videos = document.getElementById("videos");
+let us = document.getElementById("us");
+	let co = document.getElementById("co");
+arabic.onclick = ()=>{
+	
+	
+	set("arabic");
+	
+	
+}
+
+
+english.onclick = ()=>{
+	
+	
+	set("english");
+	
+	
+}
+function set(set){
+	
+	
+	if(set==="arabic"){
+	   
+		
+	home.innerHTML ="الرئيسية";
+	  about.innerHTML ="من نحن";
+	  order.innerHTML ="اطلب";
+	  connect.innerHTML ="تواصل معنا";
+		 ourwork.innerHTML ="اعمالنا";
+
+	   	  photos.innerHTML ="الصور";
+	 videos.innerHTML ="الفيديوهات";
+		us.innerHTML="لدينا خبرة واسعة في مجال تصميم وبرمجة المواقع الإلكترونية والتصميم الجرافيكي ومونتاج الفيديو والموشن جرافيك و الانفوجرافيك والنمذجة ثلاثية الابعاد والرسوم المتحركة سواء ثنائية الابعاد او ثلاثية وعند طلبك للخدمة سوف تحصل على عمل احترافي وفي وقت قصير وسعر تنافسي"
+	 co.innerHTML ="تستطيع ايجادنا على ";
+	   }else if(set==="english"){
+				
+				
+	home.innerHTML ="Home";
+	about.innerHTML ="About US";
+	 order.innerHTML ="order";
+	  connect.innerHTML ="connect";
+	 ourwork.innerHTML ="our work";
+	 	  photos.innerHTML ="photos";
+	 videos.innerHTML ="videos";
+	 
+		 us.innerHTML="We have extensive experience in the field of designing and develop websites,graphic design, video editing, motion graphic, infographic, 3d modeling and 3d animation, and when you request any servive, you will get professional work and in a short time and competitive price";
+		   
+		    co.innerHTML =" you can found us on";
+		   
+				}
+	
+	
+	
+	
+	
+} 
+	
+	
+	
+	
+	
+	
+	</script>
+	
+	
+	
+		
+	
+
+	
+
+
+	
+</body>
+	
+</html>

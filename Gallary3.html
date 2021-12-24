@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Image gallary</title>
+<link rel="stylesheet" href="Gallary3.css">
+<link rel="stylesheet" href="lightbox.min.css">
+<script type="text/javascript" src="lightbox-plus-jquery.min.js">
+</script>
+<link rel="stylesheet" href="photos.css">
+	<link rel ="icon" href ="data/website logo S-01.png">
+</head>
+
+  
+<body onbeforeprint="onbeforeprint()" onafterprint="onafterprint()"
+onselectstart="return false" oncontextmenu="return false">  
+  
+
+<header>
+	
+	
+	
+		
+	<ul>
+			<li>
+				
+		
+		 <input type="button" name="english" id="english" value="English">
+	<input type="button" name="arabic" id="arabic" value="العربية">
+				
+			</li>
+  </ul>
+	
+	
+	
+	</header>
+	
+	
+	
+	
+	
+<nav class="graphic">
+		
+		<a href="index.html" class="home" id="home" >Home</a>
+		<a href="about us.html" class="about us" id = "about">About Us</a>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSfMVJprzQF9LNMs1isC5wKIv6_PILHyi5ATwlHtJq9AOYqV2Q/viewform?usp=sf_link" target="_blank" class="order" id="order">Order</a>
+		<a href="Connect.html" class="connect" id="connect">Connect</a>
+		<ul>
+		<li><a class="ourwork" id="ourwork">our work</a>
+			
+		       <ul>
+			<li><a href="Gallary3.html" class="photos" id="photos">photos</a></li>
+			<li><a href="videos.html" class="videos" id="videos">videos</a></li>
+		      </ul>
+		 
+		
+		</li>
+		
+	  </ul>
+</nav>
+<h1>Image gallary</h1>
+	
+<div class="gallary">
+	
+<a href="data/91601654444793.5db995ec27dec.jpg" data-lightbox="mygallery"><img src="data/smale photo size/1.jpg"></a>
+<a href="data/76380397293769.5ec208c60fcdd.jpg" data-lightbox="mygallery"><img src="data/smale photo size/2.jpg"></a>
+<a href="data/04308797293769.5ec208c60f444.jpg" data-lightbox="mygallery"><img src="data/smale photo size/3.jpg"></a>	
+<a href="data/50698d87513417.5de4aea97a199.jpg" data-lightbox="mygallery"><img src="data/smale photo size/4.jpg"></a>	
+<a href="data/5687fa88457113.Y3JvcCw4OTQsNzAwLDIzMiww.jpg" data-lightbox="mygallery"><img src="data/smale photo size/5.jpg"></a>	
+<a href="data/3671e797293769.5ec208c60daaa.jpg" data-lightbox="mygallery"><img src="data/smale photo size/6.jpg"></a>	
+<a href="data/74dc0797293769.5ec208c60ea63.jpg" data-lightbox="mygallery"><img src="data/smale photo size/7.jpg"></a>	
+<a href="data/40cade88548965.Y3JvcCwxMzQyLDEwNTAsMjksMA.jpg" data-lightbox="mygallery"><img src="data/smale photo size/8.jpg"></a>	
+<a href="data/18f1ff88039481.5dca8332a3e28.jpg" data-lightbox="mygallery"><img src="data/smale photo size/9.jpg"></a>	
+<a href="data/17c36889929723.5e065f57211de.jpg" data-lightbox="mygallery"><img src="data/smale photo size/10.jpg"></a>	
+<a href="data/9e0c2897293769.5ec208c60e15b.jpg" data-lightbox="mygallery"><img src="data/smale photo size/11.jpg"></a>	
+<a href="data/5ba5b887483073.5db9909d08375.jpg" data-lightbox="mygallery"><img src="data/smale photo size/12.jpg"></a>	
+<a href="data/4bd08187513417.5dba5654e6d5c.png" data-lightbox="mygallery"><img src="data/smale photo size/13.jpg"></a>	
+<a href="data/0e576d87483073.5db994a0a46cb.jpg" data-lightbox="mygallery"><img src="data/smale photo size/14.jpg"></a>	
+<a href="data/d972a987483073.5db9909d08b39 (1).jpg" data-lightbox="mygallery"><img src="data/smale photo size/15.jpg"></a>	
+	
+
+	
+</div>
+	
+	<script>
+	
+			
+			
+	
+let arabic = document.getElementById("arabic");
+let english = document.getElementById("english");
+let home = document.getElementById("home");
+let about = document.getElementById("about");
+	let order = document.getElementById("order");
+let connect = document.getElementById("connect");
+	let ourwork = document.getElementById("ourwork");
+let photos = document.getElementById("photos");
+	let videos = document.getElementById("videos");
+let message = document.getElementById("message");
+arabic.onclick = ()=>{
+	
+	
+	set("arabic");
+	
+	
+}
+
+
+english.onclick = ()=>{
+	
+	
+	set("english");
+	
+	
+}
+function set(set){
+	
+	
+	if(set==="arabic"){
+	   
+		
+	home.innerHTML ="الرئيسية";
+	  about.innerHTML ="من نحن";
+	  order.innerHTML ="اطلب";
+	  connect.innerHTML ="تواصل معنا";
+		 ourwork.innerHTML ="اعمالنا";
+
+	   	  photos.innerHTML ="الصور";
+	 videos.innerHTML ="الفيديوهات";
+	 message.innerHTML ="ارسل رسالة";
+	   }else if(set==="english"){
+				
+				
+	home.innerHTML ="Home";
+	about.innerHTML ="About US";
+	 order.innerHTML ="order";
+	  connect.innerHTML ="connect";
+	 ourwork.innerHTML ="our work";
+	 	  photos.innerHTML ="photos";
+	 videos.innerHTML ="videos";
+	 message.innerHTML ="message";
+		   
+		   
+				}
+	
+	
+	
+	
+	
+} 
+	
+</script>
+
+</body>
+</html>
